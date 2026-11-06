@@ -6,100 +6,88 @@
     <title>contact</title>
 </head>
 <body>
-    <form action="">
-        <fieldset>
-            <legend>Make an account !</legend>
-            <table>
-                <tr>
-                    <td><br></td> 
-                </tr>
-                <tr>
-                    <td><label for="">Name :</label></td>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td><br></td> 
-                </tr>
-                <tr>
-                    <td><label for="">Surname :</label></td>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td><br></td> 
-                </tr>
-                <tr>
-                    <td><label for="">Age :</label></td>
-                    <td><input type="number"></td>
-                </tr>
-                <tr>
-                    <td><br></td> 
-                </tr>
-                <tr>
-                    <td><label for="">Gender :</label></td>
-                    <td>
-                        <input type="radio" name="rg">Female
-                        <input type="radio" name="rg">Male
-                    </td>
-                </tr>
-                <tr>
-                    <td><br></td> 
-                </tr>
-                <tr>
-                    <td><label for="">Email :</label></td>
-                    <td><input type="email" placeholder="exmpl@example.com"></td>
-                </tr>
-                <tr>
-                    <td><br></td> 
-                </tr>
-                <tr>
-                    <td><label for="">Password :</label></td>
-                    <td><input type="password"></td>
-                </tr>
-                <tr>
-                    <td><br></td> 
-                </tr>
-                <tr>
-                    <td><label for="">Confirm your password :</label></td>
-                    <td><input type="password"></td>
-                </tr>
-                <tr>
-                    <td><br></td> 
-                </tr>
-                <tr>
-                    <td><label for="">Entertainment :</label></td>
-                    <td>
-                        <input type="checkbox">I'm into anime 
-                        <input type="checkbox">I'm into video-games
-                    </td>
-                </tr>
-                <tr>
-                    <td><br></td> 
-                </tr>
-                <tr>
-                    <td><label for="">Region :</label></td>
-                    <td><select name="" id="">
-                        <option value="">Select your Region</option>
-                        <option value="">US</option>
-                        <option value="">EU</option>
-                        <option value="">MENA</option>
-                        <option value="">AFRICA</option>
-                    </select></td>
-                </tr>
-                <tr>
-                    <td><br></td> 
-                </tr>
-                <tr>
-                    <td><label for="">if you have a complaint :</label></td>
-                    <td><textarea rows="5" cols="30" name="" id="" placeholder="your complaint here..."></textarea></td>
-                </tr>
-                <tr>
-                    <td><br></td> 
-                </tr>
-                <tr>
-                    <td><input type="submit" value="submit"><input type="reset" value="reset"></td>
-                </tr>
-            </table>
-        </fieldset>
-    </form>
+    <header>
+        <h1>Contactez-nous / Inscrivez-vous</h1>
+    </header>
+    <nav>
+        <a href="anime.html">learn about Anime</a>
+        <a href="video-game.html">learn about Video-games</a>
+    </nav>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Vos coordonneés</legend>
+                <label for="">Nom* </label>
+                <input type="text" required autofocus maxlength="50" placeholder="Votre nom"><br>
+                <label for="">Prénom* </label>
+                <input type="text" required maxlength="50" placeholder="Votre prénom"><br><br>
+                <label for="">Date de naissance </label>
+                <input type="date">
+                <label for="">Adresse email* </label>
+                <input type="email" required placeholder="exemple@email.com"><br><br>
+                <label for="">Site web </label>
+                <input type="url" value="http://www." placeholder="http://monsite.com"><br><br>
+                <label for="">Code secret</label>
+                <input type="password" minlength="6" maxlength="20"><br><br>
+                <label for="">Genre </label>
+                <input type="radio" name="r" checked>Homme <input type="radio" name="r">Femme <br><br>
+                <label for="">Pays</label>
+                <select name="" id="">
+                    <option value="">Tunisie</option>
+                    <option value="">Algerie</option>
+                    <option value="">Maroc</option>
+                    <option value="">France</option>
+                    <option value="">Autre</option>
+                </select><br><br>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Information complémentaires</legend>
+                <label for="Telephon"></label>
+                <input type="tel" pattern="[0-9]{8}" placeholder="12345678"><br><br>
+                <label for="">Adresse postale </label>
+                <input type="text" placeholder="Votre adresse"><br><br>
+                <label for="">Code postale</label>
+                <input type="text" value="1000" maxlength="4"><br><br>
+                <label for="">Semester </label>
+                <select name="" id="">
+                    <option value="">S1</option>
+                    <option value="">S2</option>
+                    <option value="">S3</option>
+                    <option value="">S4</option>
+                </select><br><br>
+                <label for="">Région préférée </label>
+                <select name="" id="">
+                    <option value="">Tunis</option>
+                    <option value="">Sousse</option>
+                    <option value="">Sfax</option>
+                    <option value="">Djerba</option>
+                    <option value="">Tozeur</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Gouts et centres </legend>
+                <label for="">Centres d'intéret</label>
+                <input type="checkbox" checked>Culture <input type="checkbox">Gastronomie <input type="checkbox">Plage <input type="checkbox">Désert <input type="checkbox">Histoire <br><br>
+                <label for="">Niveau en HTML</label>
+                <input type="range" min="0" max="100" step="10"><br><br>
+                <label for="">Note de satisfaction</label>
+                <input type="number" min="1" max="10" step="1"><br><br>
+                <label for="">Message/Commentaire</label>
+                <textarea name="" id="" rows="5" cols="40" placeholder="adapté"></textarea>
+             </fieldset>
+             <fieldset>
+                <legend>Photp </legend>
+                <label for="">Photo de profil</label>
+                <input type="file" accept="image/*"><br><br>
+                <input type="submit" value="Envoyer"> <input type="reset" value="Effacer">
+             </fieldset>
+        </form>
+        
+        <a href="index.html">return to main page</a>
+    </main>
+    <footer>
+        <a href="about.html">about us</a>
+    </footer>
 </body>
 </html>
